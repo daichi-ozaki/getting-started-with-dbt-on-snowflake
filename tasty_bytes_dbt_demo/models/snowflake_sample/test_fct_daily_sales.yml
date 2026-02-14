@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: tpch_sf1
+    columns:
+    - name: order_id
+      tests:
+        - not_null
+        - unique

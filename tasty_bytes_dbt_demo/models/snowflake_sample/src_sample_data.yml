@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: tpch_sample # dbt内でのソース名
+    database: SNOWFLAKE_SAMPLE_DATA # Snowflake上の実際のDB名
+    schema: TPCH_SF1 # Snowflake上の実際のスキーマ名
+    tables:
+      - name: CUSTOMER # 実際のテーブル名
+      - name: LINEITEM # 実際のテーブル名
+      - name: NATION # 実際のテーブル名
+      - name: ORDERS # 実際のテーブル名
+      - name: PART # 実際のテーブル名
+      - name: PARTSUPP # 実際のテーブル名
+      - name: REGION # 実際のテーブル名
+      - name: SUPPLIER # 実際のテーブル名
